@@ -1,57 +1,25 @@
 import React from "react";
 
-const jobs = [
-  {
-    title: "SSC GD Constable Recruitment 2025",
-    lastDate: "15 July 2025",
-    eligibility: "10th Pass",
-    applyLink: "https://ssc.nic.in",
-    notice: "https://ssc.nic.in/SSC_GD_2025.pdf",
-  },
-  {
-    title: "ITBP Constable Tradesman 2025",
-    lastDate: "10 August 2025",
-    eligibility: "10th / ITI",
-    applyLink: "https://itbpolice.nic.in",
-    notice: "https://itbpolice.nic.in/Notice2025.pdf",
-  },
-];
-
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold mb-6 text-center text-blue-800">
-        Sarkari Job Alerts
-      </h1>
-      <div className="grid gap-4 md:grid-cols-2">
-        {jobs.map((job, idx) => (
-          <div key={idx} className="bg-white shadow-md p-4 rounded-xl">
-            <h2 className="text-xl font-semibold text-black">{job.title}</h2>
-            <p className="text-gray-700">
-              <strong>Last Date:</strong> {job.lastDate}
-            </p>
-            <p className="text-gray-700">
-              <strong>Eligibility:</strong> {job.eligibility}
-            </p>
-            <div className="mt-2 flex gap-2">
-              <a
-                href={job.applyLink}
-                className="text-white bg-blue-600 px-3 py-1 rounded hover:bg-blue-700"
-                target="_blank"
-              >
-                Apply Now
-              </a>
-              <a
-                href={job.notice}
-                className="text-white bg-green-600 px-3 py-1 rounded hover:bg-green-700"
-                target="_blank"
-              >
-                Download Notice
-              </a>
-            </div>
-          </div>
-        ))}
+    <div style={{ padding: 20 }}>
+      <h1>🔥 Sarkari Job Alerts</h1>
+
+      <div style={{ marginTop: 20 }}>
+        <h2>📌 SSC GD Constable 2025</h2>
+        <p>✅ Apply Date: Jan 2025</p>
+        <p>📅 Exam Date: March 2025</p>
+        <p>🔗 <a href="https://ssc.nic.in">Apply Now</a></p>
+      </div>
+
+      <div style={{ marginTop: 20 }}>
+        <h2>📌 ITBP Constable 2025</h2>
+        <p>✅ Apply Date: Feb 2025</p>
+        <p>📅 Exam Date: April 2025</p>
+        <p>🔗 <a href="https://recruitment.itbpolice.nic.in/">Apply Now</a></p>
       </div>
     </div>
   );
 }
+
+export default App;
